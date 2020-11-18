@@ -51,7 +51,7 @@
                 </h1>
             </div>
             <div class="lang__switcher">
-                <a href="/index.html">РУС</a>
+                <a href="/index.html">RUS</a>
             </div>
             <button class="menu__toggle js-menu-toggle">
                 <span></span>
@@ -73,6 +73,12 @@
             </li>
             <li class="menu__item">
                 <a href="//conf.mediascope.net/archive/">Archive</a>
+            </li>
+            <li class="menu__item">
+                <a href="/index.html">RUS</a>
+            </li>
+            <li class="menu__item">
+                <a href="//mediascopeconference.timepad.ru/event/1484488/" target="_blank">Registration</a>
             </li>
         </ul>
     </nav>
@@ -96,7 +102,9 @@
                 </div>
             </div>
             <div class="btn__box">
-                <a class="btn btn--fill" href="//mediascopeconference.timepad.ru/event/1477146/" target="_blank">Registration</a>
+                <a class="btn btn--fill" href="//mediascopeconference.timepad.ru/event/1484488/" target="_blank">Registration</a>
+                <br>
+                <a class="btn" href="#about-broadcast">Conference Broadcast</a>
             </div>
         </div>
     </div>
@@ -107,6 +115,15 @@
             <p>During this year we have done a lot to support you - our clients, in addressing the challenges of today and tomorrow.</p>
             <p>We will be happy to share our ideas and vision with you at our annual Clients Conference which will be held online on 1 December 2020.</p>
             <p>We invite you to register for our event and look forward to seeing you online on 1 December!</p>
+            <div id="about-broadcast">
+                <div class="broadcast__about">
+                    <h3 class="title">Conference Broadcast</h3>
+                    <p class="broadcast__info">The conference broadcast will take place on this website on December 1, 2020 and will start at 11:00am Moscow time. See you soon!</p>
+                    <div class="btn__box">
+                        <a class="btn btn--gray" href="/en/">Conference website</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -115,111 +132,71 @@
 	.broadcast__box
 		.broadcast__player
 			.broadcast__video
-				// poster=path+"img/posters/broadcast.jpg"
+				// poster=path+"img/posters/broadcast.jpg" https://www.youtube.com/watch?v=xSo7WElQfWs
 				video.video-js.vjs-default-skin.vjs-big-play-centered.vjs-show-big-play-button-on-pause(id="broadcast-video" preload="none" playsinline data-setup='{"fluid": true}' controls)
-					source(src="https://www.youtube.com/watch?v=xSo7WElQfWs" type="video/youtube")
-			// .broadcast__select 
-				select
-					option(value="0")=broadcast_player_select0
-					option(value="1")=broadcast_player_select1
-					option(value="2")=broadcast_player_select2
-				.select__arrow
-
+					source(src="" type="video/youtube")
 		.broadcast__panel
 			a.btn.btn--gray(href="#speakers")=ms_nav_item2
 			a.btn.btn--gray(href="#program")=ms_nav_item3
 			a.btn.btn--fill(href=broadcast_review_url target="_blank")=broadcast_review
-		// .broadcast__panel
-			p.broadcast__label Вы смотрите:
-			p.broadcast__caption Название выступления спикера
-			p.broadcast__label Далее в трансляции:
-			p.broadcast__time 10:15
-			p.broadcast__next Название следующего выступления
-			p.broadcast__time 12:30
-			p.broadcast__next Где мы сегодня и что будет завтра?
-			a.btn.btn--gray(href="#speakers") Спикеры
-			a.btn.btn--gray(href="#program") Программа
 -->
     <div class="screen program" id="program">
         <div class="screen__inner">
             <h2 class="title title--lg">Conference Agenda</h2>
             <div class="program__table">
-                <div class="program__time"> 11:00 /
-                    <br>13:00
+                <div class="program__row">
+                    <div class="program__time">11:00 - 11:10</div>
+                    <div class="program__speech">
+                        <p>Welcome</p>
+                        <p class="program__small">Ruslan&nbsp;
+                            <br>Tagiev,<span class="program__vocation">CEO Mediascope</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="program__row">
+                    <div class="program__time">11:10 - 11:40</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#00a696"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Ruslan&nbsp;
-                                <br>Tagiev,
-                            </span>
-                            <br>
-                            <span class="program__small">CEO</span>
+                        <p>Results 2020. Plans 2021</p>
+                        <p class="program__small">Media research development, hybrid approach and big data in research</p>
+                        <p class="program__small">Ksenia&nbsp;
+                            <br>Achkasova,<span class="program__vocation">COO Mediascope</span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">11:40 - 12:00</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Ksenia&nbsp;
-                                <br>Achkasova,
-                            </span>
-                            <br>
-                            <span class="program__small">COO</span>
+                        <p>The Ultimate Question …42!</p>
+                        <p class="program__small">How the Mediascope's new technologies help Media to better understand the path, attention and actions of a person</p>
+                        <p class="program__small">Mikhail&nbsp;
+                            <br>Zotov,<span class="program__vocation">Commercial Director Mediascope</span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">12:00 - 12:40</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Mikhail&nbsp;
-                                <br>Zotov,
+                        <p>BrandPulse: one year later</p>
+                        <p class="program__small">New opportunities for analyzing consumer markets</p>
+                        <p class="program__small">Marina&nbsp;
+                            <br>Pikuleva,<span class="program__vocation">Custom Media&nbsp;
+                                <br>Research Director Mediascope
                             </span>
-                            <br>
-                            <span class="program__small">Commercial Director</span>
                         </p>
-                    </div>
-                    <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Marina&nbsp;
-                                <br>Pikuleva,
-                            </span>
-                            <br>
-                            <span class="program__small">Custom Media&nbsp;
-                                <br>Research Director
+                        <p class="program__small">Olesya&nbsp;
+                            <br>Starostina,<span class="program__vocation">Projects Lead&nbsp;
+                                <br>Mediascope
                             </span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">12:40 - 13:00</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Olesya&nbsp;
-                                <br>Starostina,
-                            </span>
-                            <br>
-                            <span class="program__small">Projects Lead</span>
-                        </p>
-                    </div>
-                    <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Lev&nbsp;
-                                <br>Gleizer,
-                            </span>
-                            <br>
-                            <span class="program__small">CIO</span>
+                        <p>Alpaca and Capybaras</p>
+                        <p class="program__small">How the production of heterogeneous data comes to a single model, and personalization becomes part of analytics</p>
+                        <p class="program__small">Lev&nbsp;
+                            <br>Gleizer,<span class="program__vocation">CIO Mediascope</span>
                         </p>
                     </div>
                 </div>
@@ -239,7 +216,7 @@
                             <div class="speakers__name">Ruslan&nbsp;
                                 <br>Tagiev
                             </div>
-                            <div class="speakers__vocation">CEO</div>
+                            <div class="speakers__vocation">CEO Mediascope</div>
                         </div>
                     </div>
                     <div class="speakers__card">
@@ -250,7 +227,7 @@
                             <div class="speakers__name">Ksenia&nbsp;
                                 <br>Achkasova
                             </div>
-                            <div class="speakers__vocation">COO</div>
+                            <div class="speakers__vocation">COO Mediascope</div>
                         </div>
                     </div>
                     <div class="speakers__card">
@@ -261,7 +238,7 @@
                             <div class="speakers__name">Lev&nbsp;
                                 <br>Gleizer
                             </div>
-                            <div class="speakers__vocation">CIO</div>
+                            <div class="speakers__vocation">CIO Mediascope</div>
                         </div>
                     </div>
                 </div>
@@ -275,7 +252,7 @@
                                 <br>Pikuleva
                             </div>
                             <div class="speakers__vocation">Custom Media&nbsp;
-                                <br>Research Director
+                                <br>Research Director Mediascope
                             </div>
                         </div>
                     </div>
@@ -287,7 +264,9 @@
                             <div class="speakers__name">Olesya&nbsp;
                                 <br>Starostina
                             </div>
-                            <div class="speakers__vocation">Projects Lead</div>
+                            <div class="speakers__vocation">Projects Lead&nbsp;
+                                <br>Mediascope
+                            </div>
                         </div>
                     </div>
                     <div class="speakers__card">
@@ -298,7 +277,7 @@
                             <div class="speakers__name">Mikhail&nbsp;
                                 <br>Zotov
                             </div>
-                            <div class="speakers__vocation">Commercial Director</div>
+                            <div class="speakers__vocation">Commercial Director Mediascope</div>
                         </div>
                     </div>
                 </div>
@@ -346,7 +325,7 @@
                 <div>
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="//mediascope.net" target="_black">About Mediascope</a>
+                            <a href="//mediascope.net/en/" target="_black">About Mediascope</a>
                         </li>
                         <li class="menu__item">
                             <a href="#speakers">Speakers</a>
@@ -358,7 +337,7 @@
                             <a href="//conf.mediascope.net/archive/" target="_blank">Archive</a>
                         </li>
                         <li class="menu__item">
-                            <a href="/index.html">РУС</a>
+                            <a href="/index.html">RUS</a>
                         </li>
                     </ul>
                     <div class="footer__contacts">

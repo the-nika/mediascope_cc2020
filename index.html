@@ -74,6 +74,12 @@
             <li class="menu__item">
                 <a href="//conf.mediascope.net/archive/">Архив конференций</a>
             </li>
+            <li class="menu__item">
+                <a href="en/index.html">ENG</a>
+            </li>
+            <li class="menu__item">
+                <a href="//mediascopeconference.timepad.ru/event/1477146/" target="_blank">Регистрация</a>
+            </li>
         </ul>
     </nav>
     <div class="screen intro">
@@ -109,11 +115,11 @@
             <p>За этот год мы сделали многое для того, чтобы наши клиенты смогли в будущем строить свой бизнес и принимать решения на основе синтеза огромного опыта Mediascope в медиаисследованиях и лучших технологий в области работы с данными.</p>
             <p>Мы будем рады подробнее рассказать об этом на нашей конференции 1 декабря <nobr>2020 года</nobr>.</p>
             <p>В этом году наше мероприятие состоится в онлайн-формате. Посмотреть трансляцию вы сможете по предварительной регистрации.</p>
-            <p>До встречи 1 декабря!
+            <p>До встречи 1 декабря!</p>
             <div id="about-broadcast">
                 <div class="broadcast__about">
                     <h3 class="title">Где и как смотреть трансляцию</h3>
-                    <p class="broadcast__info">Трансляция будет проходить одновременно на нескольких площадках.</p>
+                    <p class="broadcast__info">Трансляция будет проходить одновременно на нескольких площадках, и вы можете выбрать наиболее удобную для Вас. 1 декабря в 11:00 стартует наш эфир. До встречи!</p>
                     <div class="btn__box">
                         <a class="btn btn--gray" href="/">Сайт конференции</a>
                         <br>
@@ -121,7 +127,6 @@
                     </div>
                 </div>
             </div>
-            </p>
         </div>
     </div>
 
@@ -130,119 +135,77 @@
 	.broadcast__box
 		.broadcast__player
 			.broadcast__video
-				// poster=path+"img/posters/broadcast.jpg"
+				// poster=path+"img/posters/broadcast.jpg" https://www.youtube.com/watch?v=xSo7WElQfWs
 				video.video-js.vjs-default-skin.vjs-big-play-centered.vjs-show-big-play-button-on-pause(id="broadcast-video" preload="none" playsinline data-setup='{"fluid": true}' controls)
-					source(src="https://www.youtube.com/watch?v=xSo7WElQfWs" type="video/youtube")
-			// .broadcast__select 
-				select
-					option(value="0")=broadcast_player_select0
-					option(value="1")=broadcast_player_select1
-					option(value="2")=broadcast_player_select2
-				.select__arrow
-
+					source(src="" type="video/youtube")
 		.broadcast__panel
 			a.btn.btn--gray(href="#speakers")=ms_nav_item2
 			a.btn.btn--gray(href="#program")=ms_nav_item3
 			a.btn.btn--fill(href=broadcast_review_url target="_blank")=broadcast_review
-		// .broadcast__panel
-			p.broadcast__label Вы смотрите:
-			p.broadcast__caption Название выступления спикера
-			p.broadcast__label Далее в трансляции:
-			p.broadcast__time 10:15
-			p.broadcast__next Название следующего выступления
-			p.broadcast__time 12:30
-			p.broadcast__next Где мы сегодня и что будет завтра?
-			a.btn.btn--gray(href="#speakers") Спикеры
-			a.btn.btn--gray(href="#program") Программа
 -->
     <div class="screen program" id="program">
         <div class="screen__inner">
             <h2 class="title title--lg">Программа</h2>
             <div class="program__table">
-                <div class="program__time"> 11:00 /
-                    <br>13:00
+                <div class="program__row">
+                    <div class="program__time">11:00 - 11:10</div>
+                    <div class="program__speech">
+                        <p>Приветственное слово</p>
+                        <p class="program__small">Руслан&nbsp;
+                            <br>Тагиев,<span class="program__vocation">генеральный директор&nbsp;
+                                <br>Mediascope
+                            </span>
+                        </p>
+                    </div>
                 </div>
                 <div class="program__row">
+                    <div class="program__time">11:10 - 11:40</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#00a696"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Руслан&nbsp;
-                                <br>Тагиев,
-                            </span>
-                            <br>
-                            <span class="program__small">генеральный директор&nbsp;
+                        <p>Итоги 2020. Планы 2021</p>
+                        <p class="program__small">Развитие медиаизмерений, гибридные подходы и большие данные в исследованиях</p>
+                        <p class="program__small">Ксения&nbsp;
+                            <br>Ачкасова,<span class="program__vocation">исполнительный директор&nbsp;
                                 <br>Mediascope
                             </span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">11:40 - 12:00</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Ксения&nbsp;
-                                <br>Ачкасова,
-                            </span>
-                            <br>
-                            <span class="program__small">исполнительный директор&nbsp;
+                        <p>Главный вопрос…42!</p>
+                        <p class="program__small">Как новые технологии Mediascope помогут медиа лучше изучить путь, внимание и действия человека</p>
+                        <p class="program__small">Михаил&nbsp;
+                            <br>Зотов,<span class="program__vocation">коммерческий директор&nbsp;
                                 <br>Mediascope
                             </span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">12:00 - 12:40</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Михаил&nbsp;
-                                <br>Зотов,
-                            </span>
-                            <br>
-                            <span class="program__small">коммерческий директор&nbsp;
-                                <br>Mediascope
-                            </span>
-                        </p>
-                    </div>
-                    <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Марина&nbsp;
-                                <br>Пикулева,
-                            </span>
-                            <br>
-                            <span class="program__small">директор по специальным&nbsp;
+                        <p>BrandPulse: год спустя</p>
+                        <p class="program__small">Новые возможности для анализа потребительских рынков</p>
+                        <p class="program__small">Марина&nbsp;
+                            <br>Пикулева,<span class="program__vocation">директор по специальным&nbsp;
                                 <br>исследованиям Mediascope
                             </span>
                         </p>
-                    </div>
-                    <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Олеся&nbsp;
-                                <br>Старостина,
-                            </span>
-                            <br>
-                            <span class="program__small">руководитель&nbsp;
+                        <p class="program__small">Олеся&nbsp;
+                            <br>Старостина,<span class="program__vocation">руководитель&nbsp;
                                 <br>проектов Mediascope
                             </span>
                         </p>
                     </div>
+                </div>
+                <div class="program__row">
+                    <div class="program__time">12:40 - 13:00</div>
                     <div class="program__speech">
-                        <svg version="1.1" viewBox="0 0 238 269" preserveAspectRatio="xMinYMin meet" fill="none">
-                            <path d="M236.953 268.422L.502 234.227V34.605L236.953.577v267.845z" stroke="#fce800"></path>
-                        </svg>
-                        <p>
-                            <span class="program__name">Лев&nbsp;
-                                <br>Глейзер,
-                            </span>
-                            <br>
-                            <span class="program__small">директор по информационным&nbsp;
+                        <p>Альпака и капибары</p>
+                        <p class="program__small">Как производство разнородных данных приходит к единой модели, а персонализация становится частью аналитики</p>
+                        <p class="program__small">Лев&nbsp;
+                            <br>Глейзер,<span class="program__vocation">директор по информационным&nbsp;
                                 <br>технологиям Mediascope
                             </span>
                         </p>
@@ -381,7 +344,7 @@
                 <div>
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="//mediascope.net" target="_black">О Mediascope</a>
+                            <a href="//mediascope.net/en/" target="_black">О Mediascope</a>
                         </li>
                         <li class="menu__item">
                             <a href="#speakers">Спикеры</a>
