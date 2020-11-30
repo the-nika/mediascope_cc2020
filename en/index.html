@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- .......... End Favicons .......... -->
+    <meta property="og:image" content="https://conf.mediascope.ru/img/mediascope.png">
 
     <!-- .......... Styles .......... -->
     <style>
@@ -77,9 +78,6 @@
             <li class="menu__item">
                 <a href="/index.html">RUS</a>
             </li>
-            <li class="menu__item">
-                <a href="//mediascopeconference.timepad.ru/event/1484488/" target="_blank">Registration</a>
-            </li>
         </ul>
     </nav>
     <div class="screen intro">
@@ -101,45 +99,53 @@
                     </div>
                 </div>
             </div>
-            <div class="btn__box">
-                <a class="btn btn--fill" href="//mediascopeconference.timepad.ru/event/1484488/" target="_blank">Registration</a>
-                <br>
-                <a class="btn" href="#about-broadcast">Conference Broadcast</a>
+        </div>
+    </div>
+    <div class="screen broadcast" id="broadcast">
+        <div class="screen__inner">
+            <h2 class="title title--lg">Broadcast</h2>
+            <div class="broadcast__box">
+                <div class="broadcast__player">
+                    <div class="broadcast__video">
+
+                        <!-- img.broadcast__poster(src=path+"img/posters/broadcast.jpg" alt="")-->
+
+                        <!-- poster=path+"img/posters/broadcast.jpg"-->
+                        <video class="video-js vjs-default-skin vjs-big-play-centered vjs-show-big-play-button-on-pause" id="broadcast-video" preload="none" playsinline data-setup="{&quot;fluid&quot;: true}" controls>
+                            <source src="https://youtu.be/zrzkaS7Gkjk" type="video/youtube">
+                        </video>
+                    </div>
+                </div>
+                <div class="broadcast__panel">
+                    <a class="btn btn--gray" href="#speakers">Speakers</a>
+                    <a class="btn btn--gray" href="#program">Conference Agenda</a>
+                    <a class="btn btn--fill btn--tg" href="//t.me/mediascopeconf" target="_blank">Ask a question in telegram</a>
+                    <a class="btn btn--fill" href="https://docs.google.com/forms/d/e/1FAIpQLSdIx30Q5zMmWtQKHZG55eM1FhRRv0VdDPZkAljXSXpirXSd9A/viewform" target="_blank">Please rate the speakers</a>
+                </div>
             </div>
         </div>
     </div>
     <div class="screen about">
         <div class="screen__inner">
-            <h2 class="title title--lg">About the conference</h2>
-            <p>2020 has been a special year for everyone. The technological transformation has become a key strategic objective for majority of businesses in media and advertising market.</p>
-            <p>During this year we have done a lot to support you - our clients, in addressing the challenges of today and tomorrow.</p>
-            <p>We will be happy to share our ideas and vision with you at our annual Clients Conference which will be held online on 1 December 2020.</p>
-            <p>We invite you to register for our event and look forward to seeing you online on 1 December!</p>
+
+            <!-- h2.title.title--lg=ms_about_title-->
+
+            <!-- p !{ms_about_text}-->
             <div id="about-broadcast">
                 <div class="broadcast__about">
                     <h3 class="title">Conference Broadcast</h3>
-                    <p class="broadcast__info">The conference broadcast will take place on this website on December 1, 2020 and will start at 11:00am Moscow time. See you soon!</p>
+                    <p class="broadcast__info">Our conference can be viewed on the website here and also on the Youtube channel. You can choose
+                        <br>the most convinient option.
+                    </p>
                     <div class="btn__box">
                         <a class="btn btn--gray" href="/en/">Conference website</a>
+                        <br>
+                        <a class="btn btn--gray" href="https://youtu.be/zrzkaS7Gkjk" target="_black">Youtube</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- .screen.broadcast.screen__inner
-	h2.title.title--lg=broadcast_title
-	.broadcast__box
-		.broadcast__player
-			.broadcast__video
-				// poster=path+"img/posters/broadcast.jpg" https://www.youtube.com/watch?v=xSo7WElQfWs
-				video.video-js.vjs-default-skin.vjs-big-play-centered.vjs-show-big-play-button-on-pause(id="broadcast-video" preload="none" playsinline data-setup='{"fluid": true}' controls)
-					source(src="" type="video/youtube")
-		.broadcast__panel
-			a.btn.btn--gray(href="#speakers")=ms_nav_item2
-			a.btn.btn--gray(href="#program")=ms_nav_item3
-			a.btn.btn--fill(href=broadcast_review_url target="_blank")=broadcast_review
--->
     <div class="screen program" id="program">
         <div class="screen__inner">
             <h2 class="title title--lg">Conference Agenda</h2>
