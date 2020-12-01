@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=0JL0VMP9FK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-0JL0VMP9FK');
+    </script>
     <meta charset="utf-8">
     <title>Mediascope Clients Conference 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,12 +79,6 @@
                 <a href="//mediascope.net/en/" target="_black">About Mediascope</a>
             </li>
             <li class="menu__item">
-                <a href="#speakers">Speakers</a>
-            </li>
-            <li class="menu__item">
-                <a href="#program">Conference Agenda</a>
-            </li>
-            <li class="menu__item">
                 <a href="//conf.mediascope.net/archive/">Archive</a>
             </li>
             <li class="menu__item">
@@ -101,187 +107,111 @@
             </div>
         </div>
     </div>
+
+    <!-- broadcast_video_url !!!!!!!!!!-->
     <div class="screen broadcast" id="broadcast">
         <div class="screen__inner">
-            <h2 class="title title--lg">Broadcast</h2>
+            <h2 class="title title--lg">Conference video</h2>
             <div class="broadcast__box">
                 <div class="broadcast__player">
                     <div class="broadcast__video">
-                        <video class="video-js vjs-default-skin vjs-big-play-centered vjs-show-big-play-button-on-pause" id="broadcast-video" preload="none" playsinline data-setup="{&quot;fluid&quot;: true}" controls>
-                            <source src="https://youtu.be/BziojwBgTRw" type="video/youtube">
+
+                        <!-- img.broadcast__poster(src=path+"img/posters/broadcast.jpg" alt="")-->
+
+                        <!-- poster=path+"img/posters/broadcast.jpg"-->
+                        <video class="video-js vjs-default-skin vjs-big-play-centered vjs-show-big-play-button-on-pause" id="broadcast-video" preload="none" playsinline controls data-setup="{&quot;fluid&quot;: true, &quot;nativeControlsForTouch&quot;: true}">
+                            <source src="https://youtu.be/SyQKVSCiGDI" type="video/youtube">
                         </video>
                     </div>
                 </div>
-                <div class="broadcast__panel">
-                    <a class="btn btn--gray" href="#speakers">Speakers</a>
-                    <a class="btn btn--gray" href="#program">Conference Agenda</a>
-                    <a class="btn btn--fill btn--tg" href="//t.me/mediascope_bot" target="_blank">Ask a question in Telegram</a>
-                    <a class="btn btn--fill" href="https://docs.google.com/forms/d/e/1FAIpQLSdIx30Q5zMmWtQKHZG55eM1FhRRv0VdDPZkAljXSXpirXSd9A/viewform" target="_blank">Please rate the speakers</a>
-                </div>
+
+                <!-- .broadcast__panela.btn.btn--gray(href="#speakers")=ms_nav_item2
+a.btn.btn--gray(href="#program")=ms_nav_item3
+a.btn.btn--fill.btn--tg(href="//t.me/mediascope_bot" target="_blank")=broadcast_tg
+a.btn.btn--fill(href=broadcast_review_url target="_blank")=broadcast_review
+-->
             </div>
         </div>
     </div>
-    <div class="screen about">
+    <div class="screen materials">
         <div class="screen__inner">
-            <div id="about-broadcast">
-                <div class="broadcast__about">
-                    <h3 class="title">Conference Broadcast</h3>
-                    <p class="broadcast__info">Our conference can be viewed on the website here and also on the Youtube channel. You can choose
-                        <br>the most convinient option.
-                    </p>
-                    <div class="btn__box">
-                        <a class="btn btn--gray" href="/en/">Conference website</a>
+            <h2 class="title title--lg">Conference
+                <br>materials
+            </h2>
+            <div class="materials__table">
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Welcome</h3>
+                        <div class="materials__speaker">Ruslan Tagiev</div>
+                        <div class="materials__vocation">CEO Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/1_Ruslan_Tagiev_Welcome2020.pdf" target="_blank">
+                                <img src="../img/download.svg" alt="">
+                            </a>
+                            <a href="/files/1_Ruslan_Tagiev_Welcome2020.pdf" target="_blank">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Results 2020.
+                            <br>Plans 2021
+                        </h3>
+                        <div class="materials__speaker">Ksenia Achkasova</div>
+                        <div class="materials__vocation">COO Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/2_Ksenia_Achkasova_Results_2020_Plans_2021.pdf" target="_blank">
+                                <img src="../img/download.svg" alt="">
+                            </a>
+                            <a href="/files/2_Ksenia_Achkasova_Results_2020_Plans_2021.pdf" target="_blank">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">The Ultimate
+                            <br>
+                            <nobr>Question …42!</nobr>
+                        </h3>
+                        <div class="materials__speaker">Mikhail Zotov</div>
+                        <div class="materials__vocation">Commercial Director Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/3_Mikhail_Zotov_The_Ultimate_Question_42.pdf" target="_blank">
+                                <img src="../img/download.svg" alt="">
+                            </a>
+                            <a href="/files/3_Mikhail_Zotov_The_Ultimate_Question_42.pdf" target="_blank">Download PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">BrandPulse:
+                            <br>one year later
+                        </h3>
+                        <div class="materials__speaker">Marina Pikuleva</div>
+                        <div class="materials__vocation">Custom Media Research Director Mediascope</div>
                         <br>
-                        <a class="btn btn--gray" href="https://youtu.be/BziojwBgTRw" target="_black">Youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="screen program" id="program">
-        <div class="screen__inner">
-            <h2 class="title title--lg">Conference Agenda</h2>
-            <div class="program__table">
-                <div class="program__row">
-                    <div class="program__time">11:00 - 11:10&nbsp;<sup>*</sup>
-                    </div>
-                    <div class="program__speech">
-                        <p>Welcome</p>
-                        <p class="program__small">Ruslan&nbsp;
-                            <br>Tagiev,<span class="program__vocation">CEO Mediascope</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:10 - 11:40&nbsp;<sup>*</sup>
-                    </div>
-                    <div class="program__speech">
-                        <p>Results 2020. Plans 2021</p>
-                        <p class="program__small">Media research development, hybrid approach and big data in research</p>
-                        <p class="program__small">Ksenia&nbsp;
-                            <br>Achkasova,<span class="program__vocation">COO Mediascope</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:40 - 11:55&nbsp;<sup>*</sup>
-                    </div>
-                    <div class="program__speech">
-                        <p>The Ultimate Question …42!</p>
-                        <p class="program__small">How the Mediascope's new technologies help Media to better understand the path, attention and actions of a person</p>
-                        <p class="program__small">Mikhail&nbsp;
-                            <br>Zotov,<span class="program__vocation">Commercial Director Mediascope</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:55 - 12:20&nbsp;<sup>*</sup>
-                    </div>
-                    <div class="program__speech">
-                        <p>BrandPulse: one year later</p>
-                        <p class="program__small">New opportunities for analyzing consumer markets</p>
-                        <p class="program__small">Marina&nbsp;
-                            <br>Pikuleva,<span class="program__vocation">Custom Media&nbsp;
-                                <br>Research Director Mediascope
-                            </span>
-                        </p>
-                        <p class="program__small">Olesya&nbsp;
-                            <br>Starostina,<span class="program__vocation">Projects Lead&nbsp;
-                                <br>Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">12:20 - 12:40&nbsp;<sup>*</sup>
-                    </div>
-                    <div class="program__speech">
-                        <p>Alpaca and Capybaras</p>
-                        <p class="program__small">How the production of heterogeneous data comes to a single model, and personalization becomes part of analytics</p>
-                        <p class="program__small">Lev&nbsp;
-                            <br>Gleizer,<span class="program__vocation">CIO Mediascope</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__notice">* Time zone: Moscow local time</div>
-            </div>
-        </div>
-    </div>
-    <div class="screen speakers" id="speakers">
-        <div class="screen__inner">
-            <h2 class="title title--lg">Speakers</h2>
-            <div class="speakers__table">
-                <div class="speakers__row">
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/r_tagiev.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Ruslan&nbsp;
-                                <br>Tagiev
-                            </div>
-                            <div class="speakers__vocation">CEO Mediascope</div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/k_achkasova.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Ksenia&nbsp;
-                                <br>Achkasova
-                            </div>
-                            <div class="speakers__vocation">COO Mediascope</div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/l_gleizer.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Lev&nbsp;
-                                <br>Gleizer
-                            </div>
-                            <div class="speakers__vocation">CIO Mediascope</div>
+                        <div class="materials__speaker">Olesya Starostina</div>
+                        <div class="materials__vocation">Projects Lead Mediascope</div>
+                        <br>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/4_Marina_Pikuleva_Olesya_Starostina_BrandPulse_one_year_later.pdf" target="_blank">
+                                <img src="../img/download.svg" alt="">
+                            </a>
+                            <a href="/files/4_Marina_Pikuleva_Olesya_Starostina_BrandPulse_one_year_later.pdf" target="_blank">Download PDF</a>
                         </div>
                     </div>
                 </div>
-                <div class="speakers__row">
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/m_pikuleva.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Marina&nbsp;
-                                <br>Pikuleva
-                            </div>
-                            <div class="speakers__vocation">Custom Media&nbsp;
-                                <br>Research Director Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/o_starostina.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Olesya&nbsp;
-                                <br>Starostina
-                            </div>
-                            <div class="speakers__vocation">Projects Lead&nbsp;
-                                <br>Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="../img/speakers/m_zotov.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Mikhail&nbsp;
-                                <br>Zotov
-                            </div>
-                            <div class="speakers__vocation">Commercial Director Mediascope</div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Alpaca and Capybaras</h3>
+                        <div class="materials__speaker">Lev Gleizer</div>
+                        <div class="materials__vocation">CIO Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/5_Lev_Gleizer_Alpaca_and_Capybaras.pdf" target="_blank">
+                                <img src="../img/download.svg" alt="">
+                            </a>
+                            <a href="/files/5_Lev_Gleizer_Alpaca_and_Capybaras.pdf" target="_blank">Download PDF</a>
                         </div>
                     </div>
                 </div>
@@ -299,12 +229,14 @@
                         <li class="menu__item">
                             <a href="//mediascope.net/en/" target="_black">About Mediascope</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#speakers">Speakers</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#program">Conference Agenda</a>
-                        </li>
+
+                        <!-- li.menu__item-->
+
+                        <!-- 	a(href="#speakers")=ms_nav_item2-->
+
+                        <!-- li.menu__item-->
+
+                        <!-- 	a(href="#program")=ms_nav_item3-->
                         <li class="menu__item">
                             <a href="//conf.mediascope.net/archive/" target="_blank">Archive</a>
                         </li>

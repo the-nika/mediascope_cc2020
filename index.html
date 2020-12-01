@@ -2,6 +2,18 @@
 <html lang="ru">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=0JL0VMP9FK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-0JL0VMP9FK');
+    </script>
     <meta charset="utf-8">
     <title>Клиентская Конференция Mediascope 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,12 +79,6 @@
                 <a href="//mediascope.net" target="_black">О Mediascope</a>
             </li>
             <li class="menu__item">
-                <a href="#speakers">Спикеры</a>
-            </li>
-            <li class="menu__item">
-                <a href="#program">Программа</a>
-            </li>
-            <li class="menu__item">
                 <a href="//conf.mediascope.net/archive/">Архив конференций</a>
             </li>
             <li class="menu__item">
@@ -101,199 +107,108 @@
             </div>
         </div>
     </div>
+
+    <!-- broadcast_video_url !!!!!!!!!!-->
     <div class="screen broadcast" id="broadcast">
         <div class="screen__inner">
-            <h2 class="title title--lg">Трансляция</h2>
+            <h2 class="title title--lg">Видео конференции</h2>
             <div class="broadcast__box">
                 <div class="broadcast__player">
                     <div class="broadcast__video">
-                        <video class="video-js vjs-default-skin vjs-big-play-centered vjs-show-big-play-button-on-pause" id="broadcast-video" preload="none" playsinline data-setup="{&quot;fluid&quot;: true}" controls>
-                            <source src="https://youtu.be/Kwohz2deZ0I" type="video/youtube">
+
+                        <!-- img.broadcast__poster(src=path+"img/posters/broadcast.jpg" alt="")-->
+
+                        <!-- poster=path+"img/posters/broadcast.jpg"-->
+                        <video class="video-js vjs-default-skin vjs-big-play-centered vjs-show-big-play-button-on-pause" id="broadcast-video" preload="none" playsinline controls data-setup="{&quot;fluid&quot;: true, &quot;nativeControlsForTouch&quot;: true}">
+                            <source src="https://youtu.be/SyQKVSCiGDI" type="video/youtube">
                         </video>
                     </div>
                 </div>
-                <div class="broadcast__panel">
-                    <a class="btn btn--gray" href="#speakers">Спикеры</a>
-                    <a class="btn btn--gray" href="#program">Программа</a>
-                    <a class="btn btn--fill btn--tg" href="//t.me/mediascope_bot" target="_blank">Задать вопрос в Telegram</a>
-                    <a class="btn btn--fill" href="https://docs.google.com/forms/d/e/1FAIpQLScdv6PY9QpsafOz-atbsIqkr21OzdAi-SQ--2DdF6jao0Ad_A/viewform" target="_blank">Оценить спикеров</a>
-                </div>
+
+                <!-- .broadcast__panela.btn.btn--gray(href="#speakers")=ms_nav_item2
+a.btn.btn--gray(href="#program")=ms_nav_item3
+a.btn.btn--fill.btn--tg(href="//t.me/mediascope_bot" target="_blank")=broadcast_tg
+a.btn.btn--fill(href=broadcast_review_url target="_blank")=broadcast_review
+-->
             </div>
         </div>
     </div>
-    <div class="screen about">
+    <div class="screen materials">
         <div class="screen__inner">
-            <div id="about-broadcast">
-                <div class="broadcast__about">
-                    <h3 class="title">Где и как смотреть трансляцию</h3>
-                    <p class="broadcast__info">Наша трансляция проходит одновременно
-                        <br>на нескольких площадках, и вы можете выбрать наиболее удобную для Вас.
-                    </p>
-                    <div class="btn__box">
-                        <a class="btn btn--gray" href="#broadcast">Сайт конференции</a>
+            <h2 class="title title--lg">Материалы
+                <br>конференции
+            </h2>
+            <div class="materials__table">
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Приветственное слово</h3>
+                        <div class="materials__speaker">Руслан Тагиев</div>
+                        <div class="materials__vocation">генеральный директор Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/1_Ruslan_Tagiev_Welcome2020.pdf" target="_blank">
+                                <img src="img/download.svg" alt="">
+                            </a>
+                            <a href="/files/1_Ruslan_Tagiev_Welcome2020.pdf" target="_blank">Скачать презентацию в PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Итоги 2020.
+                            <br>Планы 2021
+                        </h3>
+                        <div class="materials__speaker">Ксения Ачкасова</div>
+                        <div class="materials__vocation">исполнительный директор Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/2_Ksenia_Achkasova_Results_2020_Plans_2021.pdf" target="_blank">
+                                <img src="img/download.svg" alt="">
+                            </a>
+                            <a href="/files/2_Ksenia_Achkasova_Results_2020_Plans_2021.pdf" target="_blank">Скачать презентацию в PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Главный вопрос…42!</h3>
+                        <div class="materials__speaker">Михаил Зотов</div>
+                        <div class="materials__vocation">коммерческий директор Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/3_Mikhail_Zotov_The_Ultimate_Question_42.pdf" target="_blank">
+                                <img src="img/download.svg" alt="">
+                            </a>
+                            <a href="/files/3_Mikhail_Zotov_The_Ultimate_Question_42.pdf" target="_blank">Скачать презентацию в PDF</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">BrandPulse:
+                            <br>год спустя
+                        </h3>
+                        <div class="materials__speaker">Марина Пикулева</div>
+                        <div class="materials__vocation">директор по специальным исследованиям Mediascope</div>
                         <br>
-                        <a class="btn btn--gray" href="//www.facebook.com/events/811737422923199/" target="_blank">Facebook</a>
+                        <div class="materials__speaker">Олеся Старостина</div>
+                        <div class="materials__vocation">руководитель проектов Mediascope</div>
                         <br>
-                        <a class="btn btn--gray" href="https://youtu.be/Kwohz2deZ0I" target="_black">Youtube</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="screen program" id="program">
-        <div class="screen__inner">
-            <h2 class="title title--lg">Программа</h2>
-            <div class="program__table">
-                <div class="program__row">
-                    <div class="program__time">11:00 - 11:10&nbsp;</div>
-                    <div class="program__speech">
-                        <p>Приветственное слово</p>
-                        <p class="program__small">Руслан&nbsp;
-                            <br>Тагиев,<span class="program__vocation">генеральный директор&nbsp;
-                                <br>Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:10 - 11:40&nbsp;</div>
-                    <div class="program__speech">
-                        <p>Итоги 2020. Планы 2021</p>
-                        <p class="program__small">Развитие медиаизмерений, гибридные подходы и большие данные в исследованиях</p>
-                        <p class="program__small">Ксения&nbsp;
-                            <br>Ачкасова,<span class="program__vocation">исполнительный директор&nbsp;
-                                <br>Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:40 - 11:55&nbsp;</div>
-                    <div class="program__speech">
-                        <p>Главный вопрос…42!</p>
-                        <p class="program__small">Как новые технологии Mediascope помогут медиа лучше изучить путь, внимание и действия человека</p>
-                        <p class="program__small">Михаил&nbsp;
-                            <br>Зотов,<span class="program__vocation">коммерческий директор&nbsp;
-                                <br>Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">11:55 - 12:20&nbsp;</div>
-                    <div class="program__speech">
-                        <p>BrandPulse: год спустя</p>
-                        <p class="program__small">Новые возможности для анализа потребительских рынков</p>
-                        <p class="program__small">Марина&nbsp;
-                            <br>Пикулева,<span class="program__vocation">директор по специальным&nbsp;
-                                <br>исследованиям Mediascope
-                            </span>
-                        </p>
-                        <p class="program__small">Олеся&nbsp;
-                            <br>Старостина,<span class="program__vocation">руководитель&nbsp;
-                                <br>проектов Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="program__row">
-                    <div class="program__time">12:20 - 12:40&nbsp;</div>
-                    <div class="program__speech">
-                        <p>Альпака и капибары</p>
-                        <p class="program__small">Как производство разнородных данных приходит к единой модели, а персонализация становится частью аналитики</p>
-                        <p class="program__small">Лев&nbsp;
-                            <br>Глейзер,<span class="program__vocation">директор по информационным&nbsp;
-                                <br>технологиям Mediascope
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="screen speakers" id="speakers">
-        <div class="screen__inner">
-            <h2 class="title title--lg">Спикеры</h2>
-            <div class="speakers__table">
-                <div class="speakers__row">
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/r_tagiev.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Руслан&nbsp;
-                                <br>Тагиев
-                            </div>
-                            <div class="speakers__vocation">генеральный директор&nbsp;
-                                <br>Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/k_achkasova.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Ксения&nbsp;
-                                <br>Ачкасова
-                            </div>
-                            <div class="speakers__vocation">исполнительный директор&nbsp;
-                                <br>Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/l_gleizer.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Лев&nbsp;
-                                <br>Глейзер
-                            </div>
-                            <div class="speakers__vocation">директор по информационным&nbsp;
-                                <br>технологиям Mediascope
-                            </div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/4_Marina_Pikuleva_Olesya_Starostina_BrandPulse_one_year_later.pdf" target="_blank">
+                                <img src="img/download.svg" alt="">
+                            </a>
+                            <a href="/files/4_Marina_Pikuleva_Olesya_Starostina_BrandPulse_one_year_later.pdf" target="_blank">Скачать презентацию в PDF</a>
                         </div>
                     </div>
                 </div>
-                <div class="speakers__row">
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/m_pikuleva.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Марина&nbsp;
-                                <br>Пикулева
-                            </div>
-                            <div class="speakers__vocation">директор по специальным&nbsp;
-                                <br>исследованиям Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/o_starostina.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Олеся&nbsp;
-                                <br>Старостина
-                            </div>
-                            <div class="speakers__vocation">руководитель&nbsp;
-                                <br>проектов Mediascope
-                            </div>
-                        </div>
-                    </div>
-                    <div class="speakers__card">
-                        <div class="speakers__photo">
-                            <img src="img/speakers/m_zotov.png" alt="">
-                        </div>
-                        <div class="speakers__data">
-                            <div class="speakers__name">Михаил&nbsp;
-                                <br>Зотов
-                            </div>
-                            <div class="speakers__vocation">коммерческий директор&nbsp;
-                                <br>Mediascope
-                            </div>
+                <div class="materials__card">
+                    <div>
+                        <h3 class="materials__title">Альпака и капибары</h3>
+                        <div class="materials__speaker">Лев Глейзер</div>
+                        <div class="materials__vocation">директор по информационным технологиям Mediascope</div>
+                        <div class="materials__download">
+                            <a class="materials__icon" href="/files/5_Lev_Gleizer_Alpaca_and_Capybaras.pdf" target="_blank">
+                                <img src="img/download.svg" alt="">
+                            </a>
+                            <a href="/files/5_Lev_Gleizer_Alpaca_and_Capybaras.pdf" target="_blank">Скачать презентацию в PDF</a>
                         </div>
                     </div>
                 </div>
@@ -311,12 +226,14 @@
                         <li class="menu__item">
                             <a href="//mediascope.net" target="_black">О Mediascope</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#speakers">Спикеры</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#program">Программа</a>
-                        </li>
+
+                        <!-- li.menu__item-->
+
+                        <!-- 	a(href="#speakers")=ms_nav_item2-->
+
+                        <!-- li.menu__item-->
+
+                        <!-- 	a(href="#program")=ms_nav_item3-->
                         <li class="menu__item">
                             <a href="//conf.mediascope.net/archive/" target="_blank">Архив конференций</a>
                         </li>
