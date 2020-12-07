@@ -77,4 +77,16 @@ $(function() {
 		}, 300);
 	});
 
+	$('.video-js').each( function(video_index) {
+	    var video_id = $(this).attr('id');
+	    videojs(video_id).ready(function(){
+	        this.on('play', function(e) {
+	        	$(".video-js").each(function (index) {
+	                if (video_index !== index) {
+	                    this.player.pause();
+	                }
+	            });
+	        });
+	    });
+	});
 });
